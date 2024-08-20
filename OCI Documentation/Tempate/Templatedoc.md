@@ -17,7 +17,7 @@ A. The fields and their functionality are listed below:
 
 - **Name:** To identify the lab, give a name to the Template.
 
-- **Cloud Platform:** CloudLabs supports three cloud platforms - Oracle Cloud Infrastructure, Microsoft Azure, Amazon Web Services & Google Cloud Platform. Based on your lab requirements you can pick a cloud platform from the drop down.
+- **Cloud Platform:** CloudLabs supports four cloud platforms - Oracle Cloud Infrastructure, Microsoft Azure, Amazon Web Services & Google Cloud Platform. Based on your lab requirements you can pick a cloud platform from the drop down.
 
 - **Cloud Resource Usage:** This feature helps the system in calculating the cost of a Virtual Machine or the total cost of all Cloud resources. You can select any option from the drop-down menu, but we recommend selecting Cloud Resource Usage.
 
