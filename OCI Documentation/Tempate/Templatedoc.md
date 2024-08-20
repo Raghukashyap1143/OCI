@@ -33,7 +33,7 @@ A. The fields and their functionality are listed below:
 
 -   **Lab Launch Page Description:** Lab Launch page is basically where you launch your lab environment. You can add any additional instructions to this page that you think are relevant for the users.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\2.png")
+![image](Images/2.png)
 
 B. Moving on to next section, we will learn about the fields listed below:
 
@@ -76,7 +76,7 @@ Therefore, the lab guide's final output will follow the flow shown below:
 For your reference, here is a Master document sample -
 https://cloudlabsai.blob.core.windows.net/master-doc/master-doc.json
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\3.png")
+![image](Images/3.png)
 
 -   **Approx. Deployment Duration:** Your environment's pre-requisite resources will take some time to deploy. The expected deployment duration will be defined throughout this time period. The period you enter in this area will be displayed to users as a countdown to the start of the Lab.
 
@@ -86,7 +86,7 @@ https://cloudlabsai.blob.core.windows.net/master-doc/master-doc.json
 
 -   **Control Panel Resources:** Here we can mention the resources that will be visible in the Control Panel.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\4.png")
+![image](Images/4.png)
 
 C. In the last section, we will learn about the features that can be enabled:
 
@@ -96,11 +96,11 @@ C. In the last section, we will learn about the features that can be enabled:
 
 3.  At last, click on the **SUBMIT** button to save all the configurations.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\5.png")
+![image](Images/5.png)
 
 4.  Once you've submitted the template, you'll be directed to the main Template page, where the template you created will be listed as shown in the image below. Now you have to reopen the template to configure other available functionalities, so click on the **Edit** button.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\6.png")
+![image](Images/6.png)
 
 5.  Here you will have access to the following functionalities in order to fully configure a CloudLabs Template:
 
@@ -120,7 +120,7 @@ C. In the last section, we will learn about the features that can be enabled:
 
 -   Template Audit
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\7.png")
+![image](Images/7.png)
 
 6.  Now we'll have a look at each of the features to understand how they work.
 
@@ -155,7 +155,7 @@ Follow the steps below to get started:
 
 1.  Click on the + **ADD** button.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\8.png")
+![image](Images/8.png)
 
 2.  Fill up the below sections:
 
@@ -165,7 +165,7 @@ Follow the steps below to get started:
 
 -   Click on **SUBMIT** to save the configurations.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\9.png")
+![image](Images/9.png)
 
 ## TEMPLATE PERMISSIONS  
 
@@ -181,13 +181,13 @@ Now we will learn how to assign permissions on the CloudLabs Template.
 
 1. Click on the + **ADD** button.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\10.png")
+![image](Images/10.png)
 
 >**Note:** If you have pre-deployed ODLs, [click here](https://docs.cloudlabs.ai/LabDeveloper/AddPermissionsonDeployedODL) to view the steps on how to apply these permissions.
 
 2. Now fill up the following sections:
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\11.png")
+![image](Images/11.png)
 
 -   **Permission Type:** Select Custom policy as OCI allows only Custom policies
 
@@ -197,7 +197,7 @@ Now we will learn how to assign permissions on the CloudLabs Template.
 Sample OCI Custom Policy for reference: https://idlecheckfeature.blob.core.windows.net/idlecheckcontainer/PolicyTemplate.json
 
 -   At last, click on the **SUBMIT** button to save it.
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\12.png")
+![image](Images/12.png)
 
 > **Note:** The Custom Policies are to be built in JSON (JavaScript Object Notation) format and stored in an Object Storage bucket in Oracle Cloud Infrastructure (OCI), where the bucket and objects are set to be publicly accessible.
 
@@ -209,11 +209,11 @@ Take the steps below to get started:
 
 1.  Click on the + **ADD** button.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\13.png")
+![image](Images/13.png)
 
 3. In the Add Custom Handler Association, select the custom handler for the resource that you want to pre-deploy.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\14.png")
+![image](Images/14.png)
 
 4.  In the Input Parameter, provide a JSON file containing the details of the region where the resource is to be deployed.
 
