@@ -9,9 +9,7 @@ Here we will learn more about how to work with CloudLabs Template.
 
 1. Navigate to Templates section that is available in the left menu and click on + ADD button given in the top right corner.
 
-<div align="center">
-       <img src="Images/1.png" alt="image">
-</div>
+![image](Images/1.png)
 
 2. For your convenience, this page is divided into three sections:
 
