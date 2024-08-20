@@ -245,7 +245,7 @@ Take the steps below to get started:
 
     -   Parameter File: parameters01.json
 
-7.  While developing a new lab (dev - phase), you can attach an Administrator Access policy to the user so that there are no conflicts or errors while deploying any kind of resources, and once the lab development is completed, the custom policy must only have permissions over the resources required to complete the lab, so that the users cannot deploy anything besides the lab guide. Following this practice eliminates any misuse or abuse of the AWS resources by the users and is cost-effective.
+7.  While developing a new lab (dev - phase), you can attach an Administrator Access policy to the user so that there are no conflicts or errors while deploying any kind of resources, and once the lab development is completed, the custom policy must only have permissions over the resources required to complete the lab, so that the users cannot deploy anything besides the lab guide. Following this practice eliminates any misuse or abuse of the OCI resources by the users and is cost-effective.
 
 8.  While configuring the deployment handler, ensure that the formatting is correct & the format in which the deployment handler configuration file is created is JSON.
 
