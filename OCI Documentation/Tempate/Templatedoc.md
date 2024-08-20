@@ -1,4 +1,4 @@
-#   Adding O Template #
+#   Adding OCI Template #
 ## Overview ##
 
 CloudLabs Template is the base of the Hands-on-Lab environment. You can do a variety of configurations under Templates such as adding pre-requisites, enabling roles and policies for users, and much more.
