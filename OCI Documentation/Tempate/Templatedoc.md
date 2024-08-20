@@ -7,7 +7,7 @@ Here we will learn more about how to work with CloudLabs Template.
 
 ## Add Template ##
 
-1. Navigate to Templates section that is available in the left menu and click on + ADD button given in the top right corner.
+1. Navigate to Templates section that is available in the left menu and click on + **ADD** button given in the top right corner.
 
 ![image](Images/1.png)
 
