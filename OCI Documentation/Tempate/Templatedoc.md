@@ -9,7 +9,7 @@ Here we will learn more about how to work with CloudLabs Template.
 
 1. Navigate to Templates section that is available in the left menu and click on + ADD button given in the top right corner.
 
-![Alt text]("C:\Users\RaghavendraK\OneDrive - Spektra Systems LLC\Desktop\OCI Documentation\Tempate\Images\1.png")
+![Alt text]("OCI Documentation/Tempate/Images/1.png")
 
 2. For your convenience, this page is divided into three sections:
 
