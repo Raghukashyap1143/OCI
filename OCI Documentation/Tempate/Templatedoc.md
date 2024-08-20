@@ -21,9 +21,9 @@ A. The fields and their functionality are listed below:
 
 - **Cloud Resource Usage:** This feature helps the system in calculating the cost of a Virtual Machine or the total cost of all Cloud resources. You can select any option from the drop-down menu, but we recommend selecting Cloud Resource Usage.
 
-- **Code:** Use a code as an internal identifier; this code will also be concatenated in the name of the user Resource Group. As an example, if you use the code demolab, you'll be able to tell that the template is about a demo lab. The user's Resource Group will be named ODL-demolab-xxxxxx, where demolab is a lab code, ODL is the default prefix, and xxxxx is the CloudLabs-assigned user unique ID.
+- **Code:** Use a code as an internal identifier; this code will also be concatenated in the name of the user Compartment. As an example, if you use the code demolab, you'll be able to tell that the template is about a demo lab. The user's Compartment will be named ODL-demolab-xxxxxx, where demolab is a lab code, ODL is the default prefix, and xxxxx is the CloudLabs-assigned user unique ID.
 
-- Subscription Type: This option is only available if you go for **Microsoft Azure** cloud platform. For  **Oracle Cloud Infrastructure, Amazon Web Services & Google Cloud Platform**, it will be taken care of automatically.
+- **Subscription Type:** This option is only available if you go for **Microsoft Azure** cloud platform. For  **Oracle Cloud Infrastructure, Amazon Web Services & Google Cloud Platform**, it will be taken care of automatically.
 
     CloudLabs provides only Dedicated Subscription for Oracle Cloud Infrastructure.
 
@@ -38,6 +38,7 @@ A. The fields and their functionality are listed below:
 B. Moving on to next section, we will learn about the fields listed below:
 
 -   **Custom Page Title:** In case you want to customize the title of the Hands-on-Lab Registration page, you can provide a title in this field.
+
 -   **Custom Logo URL:** In case you want to customize the logo of the Hands-on-Lab Registration page, you can provide the URL of logo in this field.
 
 > **Note:** The default page title and logo will be displayed, but if you wish to change them, you can use this field. End-users will be able to see it on the Hands-on Lab registration page, allowing you to customize what you want them to see.
@@ -54,7 +55,7 @@ B. Moving on to next section, we will learn about the fields listed below:
 
     >**Note** To allow the URLs to be entered here, all documents should be in GitHub or PDF format. The users will be able to access these documents by just clicking on the URLs.
 
--   Github Master Document file URL: This is a JSON-formatted document that is used to arrange the lab guide to a coherent way. We should first prepare the document in JSON format, with section-by-section raw GitHub URLs, as it only supports GitHub raw URLs. 
+-   **Github Master Document file URL:** This is a JSON-formatted document that is used to arrange the lab guide to a coherent way. We should first prepare the document in JSON format, with section-by-section raw GitHub URLs, as it only supports GitHub raw URLs. 
 
 A master document contains the following information:
 
@@ -74,6 +75,7 @@ Therefore, the lab guide's final output will follow the flow shown below:
 -   Exercise 3
 -   Summary
 For your reference, here is a Master document sample -
+
 https://cloudlabsai.blob.core.windows.net/master-doc/master-doc.json
 
 ![image](Images/3.png)
@@ -127,7 +129,7 @@ C. In the last section, we will learn about the features that can be enabled:
 ##  Terraform Template ##
 As the name suggests, you will provide the Terraform template files here to provision your lab environment.
 
--   **Terraform template file:** The Terraform Template is a JavaScript Object Notation (JSON) file that outlines your project's infrastructure and settings. The resources required for deployment, as well as their properties, must be specified in the template.
+-   **Terraform template file:** The Terraform Template is a HashiCorp Configuration Language (HCL) file that outlines your project's infrastructure and settings. The resources required for deployment, as well as their properties, must be specified in the template.
 
 A Terraform Template has the following sections:
 
@@ -143,7 +145,7 @@ A Terraform Template has the following sections:
  
  https://idlecheckfeature.blob.core.windows.net/idlecheckcontainer/Linuxinstance.zip
 
- -  **Parameter file:** Rather than passing parameters as inline values in your CloudFormation Template, you can use a JSON file that contains the parameter values. The parameter names in the parameter section of your CloudFormation template and Parameter file must match.
+ -  **Parameter file:** Rather than passing parameters as inline values in your Terraform Template, you can use a JSON file that contains the parameter values. The parameter names in the parameter section of your Terraform template and Parameter file must match.
 
  For your reference, here is a parameter file sample:
 
@@ -153,13 +155,13 @@ To learn more about the Terraform Template, check [Create and deploy your first 
 
 Follow the steps below to get started:
 
-1.  Click on the + **ADD** button.
+1.  Click on the **+ ADD** button.
 
 ![image](Images/8.png)
 
 2.  Fill up the below sections:
 
--   **Terraform Template URL:** Add the Terraform Template file URL here.
+-   **Terraform Template URL:** Add the Terraform zip file URL here.
 
 -   **Parameter Template URL:** Add the parameter file URL here.
 
@@ -175,7 +177,7 @@ Here are some examples of what you can do with template permissions:
 
 1. Allow a user to create and manage OCI resources like Object Storage, Compute instances, and Autonomous Databases with limited or full access to these resources.
 
-2. Allow users to create and manage IAM users, groups, and attach policies to control access within the OCI environment.
+2. Allow users to create and manage users, groups, and attach policies to control access within the OCI environment.
 
 Now we will learn how to assign permissions on the CloudLabs Template.
 
@@ -189,9 +191,10 @@ Now we will learn how to assign permissions on the CloudLabs Template.
 
 ![image](Images/11.png)
 
--   **Permission Type:** Select Custom policy as OCI allows only Custom policies
+-   **Permission Type:** Select Custom policy as OCI allows only Custom policies.
 
--   **Scope Type:** Choose Oracle Cloud Infrastructure 
+-   **Scope Type:** Choose Oracle Cloud Infrastructure.
+
 -   **Permission Data:** Here we can provide the link to the custom policy created to grant access to various Oracle Cloud Infrastructure (OCI) services.
 
 Sample OCI Custom Policy for reference: https://idlecheckfeature.blob.core.windows.net/idlecheckcontainer/PolicyTemplate.json
@@ -203,7 +206,7 @@ Sample OCI Custom Policy for reference: https://idlecheckfeature.blob.core.windo
 
 ##  Deployment Handlers
 
-This feature allows you to pre-deploy some resources, like Key-Pair & Default VPC.
+This feature allows you to pre-deploy some resources, like Key-Pair & Default VCN.
 
 Take the steps below to get started:
 
@@ -219,7 +222,7 @@ Take the steps below to get started:
 
 5. Check the checkbox next to the **IsActive** parameter, and click on the **Submit** button.
 
-##  Best Practices: Adding AWS Templates
+##  Best Practices: Adding OCI Templates
 1.  It is recommended that you provide the **Description** at the template level so that whenever you create multiple ODLs from the same template, you do not need to add a description at each ODL level; it is automatically configured.
 
 2.  Add **Owner Email** to identify the person responsible for building the template, so that whenever there is an issue with the template configurations or while accessing the lab environment, you can reach out to the template owner.
@@ -245,9 +248,7 @@ Take the steps below to get started:
 
     -   Parameter File: parameters01.json
 
-7.  While developing a new lab (dev - phase), you can attach an Administrator Access policy to the user so that there are no conflicts or errors while deploying any kind of resources, and once the lab development is completed, the custom policy must only have permissions over the resources required to complete the lab, so that the users cannot deploy anything besides the lab guide. Following this practice eliminates any misuse or abuse of the OCI resources by the users and is cost-effective.
-
-8.  While configuring the deployment handler, ensure that the formatting is correct & the format in which the deployment handler configuration file is created is JSON.
+7.  While configuring the deployment handler, ensure that the formatting is correct & the format in which the deployment handler configuration file is created is JSON.
 
 
 
