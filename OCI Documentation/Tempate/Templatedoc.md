@@ -23,7 +23,7 @@ A. The fields and their functionality are listed below:
 
 - **Code:** Use a code as an internal identifier; this code will also be concatenated in the name of the user Compartment. As an example, if you use the code demolab, you'll be able to tell that the template is about a demo lab. The user's Compartment will be named ODL-demolab-xxxxxx, where demolab is a lab code, ODL is the default prefix, and xxxxx is the CloudLabs-assigned user unique ID.
 
-- **Subscription Type:** This option is only available if you go for **Microsoft Azure** cloud platform. For  **Oracle Cloud Infrastructure, Amazon Web Services & Google Cloud Platform**, it will be taken care of automatically.
+- **Subscription Type:** **Oracle cloud Infrastructure** supports on Only dedicated Subscription.
 
     CloudLabs provides only Dedicated Subscription for Oracle Cloud Infrastructure.
 
@@ -162,6 +162,7 @@ Follow the steps below to get started:
 2.  Fill up the below sections:
 
 -   **Terraform Template URL:** Add the Terraform zip file URL here.
+      > **Note:** Create a zip file which contains the .tf file and upload the URL above.
 
 -   **Parameter Template URL:** Add the parameter file URL here.
 
